@@ -1,5 +1,7 @@
-import sys
+import os
 import numpy as np
+
+path = os.path.dirname(os.getcwd())
 
 filename = 'F:\\Source\\Data-Science-Projects\\data_files\\data_singlevar.txt'
 X = []
