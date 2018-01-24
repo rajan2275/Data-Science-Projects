@@ -1,9 +1,16 @@
 import os
 import numpy as np
+import tkinter
+from sys import platform
 
 path = os.path.dirname(os.getcwd())
 
-filename = 'F:\\Source\\Data-Science-Projects\\data_files\\data_singlevar.txt'
+filename = path+'/Data-Science-Projects/data_files/linear_regression_data.txt' \
+           if platform == 'linux' or platform == 'linux2' \
+           else '\\Data-Science-Projects\\data_files\\linear_regression_data.txt'
+
+
+
 X = []
 y = []
 with open(filename, 'r') as f:
@@ -75,7 +82,9 @@ print('R2 score =', round(sm.r2_score(y_test, y_test_pred), 2))
 # Model persistence
 import pickle as pickle
 
-output_model_file = '3_model_linear_regr.pkl'
+output_model_file = path+'/Data-Science-Projects/Linear Regression/models/liner_regression_model.pkl' \
+           if platform == 'linux' or platform == 'linux2' \
+           else '\\Data-Science-Projects\\Linear Regression\\models\\liner_regression_model.pkl'
 
 with open(output_model_file, 'wb') as f:
     pickle.dump(linear_regressor, f)
