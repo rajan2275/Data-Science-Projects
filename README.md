@@ -10,6 +10,11 @@
     <td>The project illustrates data scarping technique 
     using python. Real data is needed for machine learning projects. The data is available on internet and can be scrapped. This project 
     will provide code to scrape data from internet.</td>
+    <td> <a href='https://github.com/rajan2275/Data-Science-Projects/tree/master/Linear%20Regression'>Linear Regression</a></td>
+    <td>Linear Regression examples.</td>
+    <td> <a href='https://github.com/rajan2275/Data-Science-Projects/tree/master/Classifiers'>Linear Regression</a></td>
+    <td>Classifiers examples.</td>
+
 </tr>
 </table>
 
