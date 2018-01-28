@@ -1,7 +1,19 @@
-import sys
+import os
 import numpy as np
+import tkinter
+from sys import platform
+from sklearn import linear_model
+import matplotlib.pyplot as plt
 
-filename = 'F:\\Source\\Data-Science-Projects\\data_files\\data_singlevar.txt'
+import sklearn.metrics as sm
+import pickle as pickle
+
+path = os.path.dirname(os.getcwd())
+
+filename = path+'/Data-Science-Projects/data_files/linear_regression_data.txt' \
+           if platform == 'linux' or platform == 'linux2' \
+           else '\\Data-Science-Projects\\data_files\\linear_regression_data.txt'
+
 X = []
 y = []
 with open(filename, 'r') as f:
@@ -23,32 +35,22 @@ X_test = np.array(X[num_training:]).reshape((num_test,1))
 y_test = np.array(y[num_training:])
 
 # Create linear regression object
-from sklearn import linear_model
-
 linear_regressor = linear_model.LinearRegression()
 
 # Train the model using the training sets
 linear_regressor.fit(X_train, y_train)
 
-import matplotlib.pyplot as plt
-
 # Predict the train data output
 y_train_pred = linear_regressor.predict(X_train)
-
 plt.figure()
 plt.scatter(X_train, y_train, color='green')
 plt.plot(X_train, y_train_pred, color='black', linewidth=4)
 plt.title('Training data')
 plt.show()
 
-
-
 # Predict the test data output
 y_test_pred = linear_regressor.predict(X_test)
-
-
 plt.figure()
-
 plt.scatter(X_test, y_test, color='green')
 plt.plot(X_test, y_test_pred, color='black', linewidth=4)
 plt.title('Test data')
@@ -56,24 +58,17 @@ plt.xticks(())
 plt.yticks(())
 plt.show()
 
-
-
 # Measure performance
-import sklearn.metrics as sm
-
 print('Mean absolute error =', round(sm.mean_absolute_error(y_test, y_test_pred), 2))
 print('Mean squared error =', round(sm.mean_squared_error(y_test, y_test_pred), 2))
 print('Median absolute error =', round(sm.median_absolute_error(y_test, y_test_pred), 2))
 print('Explain variance score =', round(sm.explained_variance_score(y_test, y_test_pred), 2))
 print('R2 score =', round(sm.r2_score(y_test, y_test_pred), 2))
 
-
-
-
 # Model persistence
-import pickle as pickle
-
-output_model_file = '3_model_linear_regr.pkl'
+output_model_file = path+'/Data-Science-Projects/Linear Regression/models/liner_regression_model.pkl' \
+           if platform == 'linux' or platform == 'linux2' \
+           else '\\Data-Science-Projects\\Linear Regression\\models\\liner_regression_model.pkl'
 
 with open(output_model_file, 'wb') as f:
     pickle.dump(linear_regressor, f)
