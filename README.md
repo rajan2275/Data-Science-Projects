@@ -1,5 +1,5 @@
 # Data Science Projects 
-
+Data Scraping, Linear Regression, Linear Classifier, Logistic Regression
 <table>
     <tr>
         <td>Projects</td>
