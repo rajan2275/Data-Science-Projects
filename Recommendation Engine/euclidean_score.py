@@ -1,6 +1,8 @@
-
+import os
+from sys import platform
 import json
 import numpy as np
+
 # Returns the Euclidean distance score between user1 and user2
 def euclidean_score(dataset, user1, user2):
     # Check user in dataset.
@@ -14,11 +16,15 @@ def euclidean_score(dataset, user1, user2):
     return 1 / (1 + np.sqrt(np.sum(squared_differences)))
 
 if __name__=='__main__':
+    path = os.path.dirname(os.getcwd())
 
-    filename = 'movie_ratings.json'
+    filename = path + '/data_files/movie_ratings.json' \
+        if platform == 'linux' or platform == 'linux2' \
+        else path + '\\data_files\\movie_ratings.json'
+
     with open(filename, 'r') as f: data = json.loads(f.read())
-    user1 = 'John Carson'
-    user2 = 'Michelle Peterson'
+    user1 = 'Rajan'
+    user2 = 'Rinku'
 
     print('\nEuclidean score:')
     print(euclidean_score(data, user1, user2))

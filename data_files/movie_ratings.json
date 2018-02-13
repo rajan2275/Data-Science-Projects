@@ -1,5 +1,5 @@
 {
-    "John Carson": 
+    "Rajan":
     {
         "Inception": 2.5,
         "Pulp Fiction": 3.5,
@@ -8,7 +8,7 @@
         "Serendipity": 2.5,
         "Jerry Maguire": 3.0
     },
-    "Michelle Peterson": 
+    "Rinku":
     {
         "Inception": 3.0,
         "Pulp Fiction": 3.5,
@@ -17,14 +17,14 @@
         "Jerry Maguire": 3.0,
         "Serendipity": 3.5 
     },
-    "William Reynolds": 
+    "Ria":
     {
         "Inception": 2.5,
         "Pulp Fiction": 3.0,
         "Fracture": 3.5,
         "Jerry Maguire": 4.0
     },
-    "Jillian Hobart": 
+    "Gurkamal":
     {
         "Pulp Fiction": 3.5,
         "Anger Management": 3.0,
@@ -32,7 +32,7 @@
         "Fracture": 4.0,
         "Serendipity": 2.5 
     },
-    "Melissa Jones": 
+    "Priya":
     {
         "Inception": 3.0,
         "Pulp Fiction": 4.0,
@@ -41,7 +41,7 @@
         "Jerry Maguire": 3.0,
         "Serendipity": 2.0
     },
-    "Alex Roberts": 
+    "Gia":
     {
        "Inception": 3.0,
        "Pulp Fiction": 4.0,
@@ -49,10 +49,15 @@
        "Fracture": 5.0,
        "Serendipity": 3.5
     },
-    "Michael Henry": 
+    "Bani":
     {
        "Pulp Fiction": 4.5,
        "Serendipity": 1.0,
        "Fracture": 4.0
+    },
+    "Hazel":
+    {
+       "Pulp Fiction": 4.5,
+       "Serendipity": 1.0
     }
 }
