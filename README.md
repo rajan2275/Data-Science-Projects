@@ -19,7 +19,13 @@ Data Scraping, Linear Regression, Linear Classifier, Logistic Regression, Naive 
          <td> <a href='https://github.com/rajan2275/Data-Science-Projects/tree/master/Classifiers'>Classifiers</a></td>
            <td>Classifiers examples.</td>
     </tr>
-    <td><a href='https://github.com/rajan2275/Data-Science-Projects/tree/master/Recommendation%20Engine'>Recommendation Engine</a></td>
-    <td>Recommendation Engine example.</td>
+    <tr>
+        <td><a href='https://github.com/rajan2275/Data-Science-Projects/tree/master/Recommendation%20Engine'>Recommendation Engine</a>              </td>
+          <td>Recommendation Engine example.</td>
+    </tr>
+    <tr>
+        <td><a href='https://github.com/rajan2275/Data-Science-Projects/tree/master/Sentiment_Analysis'>Sentiment Analysis</a>              </td>
+          <td>Sentiment Analysis example.</td>
+    </tr>
 </table>
 
