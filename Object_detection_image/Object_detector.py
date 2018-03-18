@@ -12,7 +12,7 @@ face_cascade = cv2.CascadeClassifier(filename)
 
 # Check if the face cascade file has been loaded
 if face_cascade.empty():
-	raise IOError('Unable to load the face cascade classifier xml file')
+  raise IOError('Unable to load the face cascade classifier xml file')
 
 # Define the scaling factor
 scaling_factor = 0.5
