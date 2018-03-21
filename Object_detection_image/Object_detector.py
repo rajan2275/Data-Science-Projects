@@ -5,20 +5,20 @@ import os
 path = os.path.dirname(os.getcwd())
 
 # Trained haar cascade for objects o be identified
-filename = path+'\\Data-Science-Projects\\Object_detection_image\\mydetector.xml'
+filename = path+'\\Object_detection_image\\mydetector.xml'
 
 # Load the face cascade file
 face_cascade = cv2.CascadeClassifier(filename)
 
 # Check if the face cascade file has been loaded
-if face_cascade.empty():
-  raise IOError('Unable to load the face cascade classifier xml file')
+# if face_cascade.empty():
+#   raise IOError('Unable to load the face cascade classifier xml file')
 
 # Define the scaling factor
 scaling_factor = 0.5
 
 # Select image for testing.
-filepath = path+'\\Data-Science-Projects\\Object_detection_image\\images\\test\\1a.bmp'
+filepath = path+'\\Object_detection_image\\images\\test\\1a.bmp'
 
 # Read image for test
 image = cv2.imread(filepath, 0)
