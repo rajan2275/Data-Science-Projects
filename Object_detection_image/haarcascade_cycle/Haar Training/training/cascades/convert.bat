@@ -1,1 +1,1 @@
-haarconv.exe data mydetector.xml 24 24
+haarconv.exe data cycle_detector.xml 24 24
