@@ -4,17 +4,7 @@ import os
 from sys import platform
 import pandas as pd
 import csv
-from types import SimpleNamespace as Namespace
 
-
-from urllib.parse import urlencode
-from collections import OrderedDict
-#https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=Washington,DC&destinations=New+York+City,NY&key=AIzaSyBOpfbJt97X-nUq76lbVyAnukrwKgFQDa4
-
-# initial_url = "https://maps.googleapis.com/maps/api/distancematrix/json"
-# units='imperial'
-# key='AIzaSyBOpfbJt97X-nUq76lbVyAnukrwKgFQDa4'
-#
 path = os.path.dirname(os.getcwd())
 
 google_key = 'AIzaSyBOpfbJt97X-nUq76lbVyAnukrwKgFQDa4'
@@ -54,8 +44,6 @@ with open(filepath + 'output_distances.csv','w', newline='') as newFile:
         except Exception as e:
                 error_message = 'Error getting distance.'
                 pass
-
         combined_row = [row['S.No.'], row['origin_address'], row['destination_address'], distance , str(jData), error_message ]
         newFileWriter.writerow(combined_row)
-        #jData['rows'][0]['elements'][0]
         print(jData)
