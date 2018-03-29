@@ -39,8 +39,7 @@ with open(filepath + 'output_distances.csv','w', newline='') as newFile:
             resp = requests.get(url_endpoint, params=mydict)
             if(resp.ok):
                 jData = json.loads(resp.text)
-                if not jData['rows'][0]['elements'][0]['Status'] == 'NOT_FOUND':
-                    distance = jData['rows'][0]['elements'][0]['distance']['text']
+                distance = jData['rows'][0]['elements'][0]['distance']['text']
         except Exception as e:
                 error_message = 'Error getting distance.'
                 pass
