@@ -9,7 +9,7 @@ path = os.path.dirname(os.getcwd())
 
 # Key and unit needs to be changed.
 # ----------------------------------
-google_key = 'AIzaSyBOpfbJt97X-nUq76lbVyAnukrwKgFQDa4'
+google_key = 'YourGoogleKey'
 measurement_unit = 'imperial'
 filepath = path+'/GoogleDistanceCalculator/data_files/' \
            if platform == 'linux' or platform == 'linux2' \
