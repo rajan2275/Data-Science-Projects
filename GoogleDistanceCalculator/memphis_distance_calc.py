@@ -72,7 +72,6 @@ for index, row in input_df_destinations.iterrows():
         excel_column = excel_column + 1
     excel_row = excel_row + 1
     excel_column = 1
-    if index == 5: break
 workbook.close()
 
 
