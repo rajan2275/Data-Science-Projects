@@ -61,7 +61,7 @@ for index, row in input_df_destinations.iterrows():
                 distance = jData['rows'][0]['elements'][0]['distance']['text']
                 distance = float(distance.replace('mi','').strip())
         except Exception as e:
-                error_message = 'Error'
+                distance = 'Error'
                 pass
 
         if index == 0:
